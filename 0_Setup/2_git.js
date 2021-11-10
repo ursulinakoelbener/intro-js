@@ -20,8 +20,10 @@
 // b. Visualize the changes you have made to the files in the folder.
 
 // b. If you are happy with them "stage" them, that is add them to the index.
+// click on the Plus
 
 // c. Add a proper "commit" message to describe your changes. Be concise.
+// click the thick to commit
 
 // d. Good! Your changes are saved. If you have the permissions to, you can 
 // now push push your updated to your online repository.
