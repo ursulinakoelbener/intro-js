@@ -12,22 +12,22 @@
 // Update 11.07.2021 Population in Luzern did not change according to Wikipedia.
 
 // a. Compute (18 + 107) / (5 * 25)
-a = (18 + 107) / (5 * 25)
+a = (18 + 107) / (5 * 25);
 
 console.log(a);
 
 // b. Compute the square root of one million.
-b = Math.sqrt(1000000)
+b = Math.sqrt(1000000);
 
 console.log(b);
 
 // c. Take the remainder of the division betwen 123 and 9 squared, minus 1.
-c = (123 / Math.pow(9, 2))-1
+c = (123 % Math.pow(9, 2)) - 1;
 
 console.log(c);
 
 // d. Take the integer part of the float number 2.123456789 (need to use Math).
-d = Math.floor(2.123456789)
+d = Math.floor(2.123456789);
 
 console.log(d);
 
@@ -67,11 +67,18 @@ console.log(luzernPopulation);
 // a. Generate a random number between 0 and 1, and store its value
 // in a variable (and pick a proper name for the variable!).
 // Hint. The Math object is your friend.
-
+randomNumber = Math.random();
+console.log(randomNumber);
 
 // b. Generate a random number between 0 and 10.
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
 
-
+randomInteger = getRandomInt(0, 10);
+console.log(randomInteger);
 
 //////////////////////////////
 // You finished this sheet! //
