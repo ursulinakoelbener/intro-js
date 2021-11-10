@@ -152,12 +152,13 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 
 
 // Strings
-
+morpho = 'I am a string now.';
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Characters
+morpho = 'U';
 
 // A one-type character string is also a string. Other languages have
 // the type 'char' for this special case, but not JS.
@@ -165,14 +166,18 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
+// Characters are also Strings.
+
 // Booleans.
 
 // False.
+morpho = false;
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // True.
+morpho = true;
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
@@ -180,11 +185,13 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 // Not much to say about booleans, they are kind of booring. But useful.
 
 // Undefined.
+morpho = undefined;
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Null
+morpho = null;
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
@@ -196,18 +203,19 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Bigints represent whole numbers larger than 2^53 - 1. You probably won't 
 // use them a lot.
-
+morpho = 1n;
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Symbols are variables that guaranteed to be unique. You probably won't 
 // use them a lot.
-
+morpho = Symbol('unique')
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
+// This bit did not work...
 
 //////////////////////////////
 // You finished this sheet! //

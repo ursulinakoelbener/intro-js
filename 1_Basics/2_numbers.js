@@ -12,23 +12,29 @@
 // Update 11.07.2021 Population in Luzern did not change according to Wikipedia.
 
 // a. Compute (18 + 107) / (5 * 25)
+a = (18 + 107) / (5 * 25)
 
 console.log(a);
 
 // b. Compute the square root of one million.
+b = Math.sqrt(1000000)
 
 console.log(b);
 
 // c. Take the remainder of the division betwen 123 and 9 squared, minus 1.
+c = (123 / Math.pow(9, 2))-1
 
 console.log(c);
 
 // d. Take the integer part of the float number 2.123456789 (need to use Math).
+d = Math.floor(2.123456789)
 
 console.log(d);
 
 // Now compute:
 console.log(a*b*c*d);
+
+// run the whole code above
 
 // EXERCISE 2. Variable Naming.
 ///////////////////////////////
