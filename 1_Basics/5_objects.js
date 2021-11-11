@@ -55,6 +55,10 @@ console.log(`${person.name} was born in ${person.birth}.`);
 age = 2021-person.birth ;
 console.log(`${person.name} is ${age} years old.`); 
 
+// Using the Date() Function to code properly.
+curYear = new Date().getFullYear();
+console.log(person.name + ' is ' + (curYear - person.year) + ' years old.');
+
 // EXERCISE 2. Add and remove properties to the person object.
 //////////////////////////////////////////////////////
 

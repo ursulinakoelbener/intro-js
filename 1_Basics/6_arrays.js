@@ -9,6 +9,11 @@
 //////////////////////////
 
 // Let's do the usual type checking with morpho for warming up.
+morpho = [];
+
+// An empty array.
+console.log('Morpho: ' + morpho);
+console.log('The type of morpho is: ' + typeof morpho);
 
 // Arrays.
 
@@ -33,16 +38,53 @@ brendan = {
     year: 1961
 };
 
+// Marie Curie was a Polish and naturalized-French physicist and chemist who 
+// conducted pioneering research on radioactivity. She was the first woman to 
+// win a Nobel Prize, the first person and the only woman to win the Nobel 
+// Prize twice, and the only person to win the Nobel Prize in two scientific 
+// fields.
+curie = {
+    first: 'Marie',
+    last: 'Curie',
+    year: 1867
+}
+
+// Malala Yousafzai is a Pakistani activist for female education and a Nobel 
+// Peace Prize laureate.
+yousafzai = {
+    first: 'Malala',
+    last: 'Yousafzai',
+    year: 1997
+}
+
 // persons = ...
+persons = [brendan, curie, yousafzai];
+
+// or an easier way
+array = [
+    brendan,
+    { first: 'Pablo', last: 'Picasso', year: 1881 },
+    { first: 'Napoleon', last: 'Bonaparte', year: 1821}
+]
 
 // b. Count how many elements are in the array.
 // Hint: Use the .length property.
+console.log("The array has " + persons.length + " elements.");
 
 // EXERCISE 2. Accessing items inside arrays.
 /////////////////////////////////////////////
 
 // Access the second element of the array and create a string of the type: 
 // 'X was born in Y'.
+for (i = 0; i < persons.length; i++) {
+    message = persons[i].first + " was born in " + persons[i].year + ".";
+    console.log(message);
+}
+
+// Just one element
+person = persons[1];
+str = person.first + ' ' + person.last + ' was born in ' + person.year + ".";
+console.log(str);
 
 // Hint: arrays are 0-indexed, that is the first element has index 0,
 // the second element 1, and so on.
@@ -51,6 +93,9 @@ brendan = {
 //////////////////////////////////////////////////////////
 
 // Repeat exercise 2, but this time you pick a random item from the array.
+person = persons[(Math.floor(Math.random(0, persons.length)))];
+str = person.first + ' ' + person.last + ' was born in ' + person.year + ".";
+console.log(str);
 
 // Hint. Generate a random number between 0 and the total
 // number of elements in the array, then "floor" it with the corresponding
@@ -71,6 +116,22 @@ console.log(persons[randomNumber]);
 // you would like to add the element. For instance the method `push`
 // will add at the bottom of the array.
 
+persons = [
+    { first: 'Brendan', last: 'Eich', year: 1961 },
+    { first: 'Marie', last: 'Curie', year: 1967 },
+    { first: 'Malala', last: 'Yousafzai', year: 1997 }
+];
+
+// There are heaps of women who deserve some attention ;-)
+
+theresia = {
+    first: 'Theresia',
+    last: 'Rohner Mattmüller',
+    year: 1954
+};
+
+persons.push(theresia);
+
 // Verify that you added at the bottom.
 console.log(persons[3]);
 
@@ -80,6 +141,14 @@ console.log(persons[3]);
 // Maybe you hurried too much with Phil Katz. What about
 // replacing him with Linus Torvalds (1969) instead?
 // Hint: simply assign a new value at a given array index.
+
+linus = {
+    first: 'Linus',
+    last: 'Trovalds',
+    year: 1969
+};
+
+persons[3] = linus;
 
 // Verify who is the bottom of the array.
 console.log(persons[3]);
@@ -94,6 +163,18 @@ console.log(persons[3]);
 // Hint: the method `splice` modifies the original array and returns the
 // removed elements.
 
+persons = [
+    { first: 'Brendan', last: 'Eich', year: 1961 },
+    { first: 'Pablo', last: 'Picasso', year: 1881 },
+    { first: 'Napoleon', last: 'Bonaparte', year: 1821 },
+    { first: 'Linus', last: 'Torvalds', year: 1962 }
+];
+
+persons.splice(1,2);
+
+// Verify the content of the updated array.
+console.log(persons);
+
 // Verify the content of the updated array.
 console.log(persons);
 
@@ -106,6 +187,8 @@ console.log(persons);
 
 myArray = [];
 
+if (myArray.length) console.log('Array is not empty.');
+else console.log('Array is empty.');
 
 //////////////////////////////
 // You finished this sheet! //
