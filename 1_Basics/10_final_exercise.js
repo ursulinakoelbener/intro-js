@@ -16,6 +16,23 @@
 // any input number. For instance, if input is 10, the result is 55.
 // Motivational Hint: This exercise is often asked at job interviews.
 
+function fibonacci(input){
+    let number1 = 0;
+    let number2 = 1;
+    let numberTemp;
+
+    for (i = 0; i < (input - 1); i++) {
+        numberTemp = number1 + number2;
+        number1 = number2;
+        number2 = numberTemp;
+        console.log('number 1 is: ' + number1 + ', number 2 is: ' + number2);
+    }
+console.log('The Fibonacci number of ' + input + ' is ' + number2 +'.');
+}
+
+fibonacci(10);
+
+// There sure is an easier way...
 
 // EXERCISE 2. Bonus. Recursive Fibonacci.
 //////////////////////////////////////////
